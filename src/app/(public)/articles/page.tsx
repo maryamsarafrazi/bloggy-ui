@@ -1,3 +1,9 @@
+import Header from "../../../components/Header/Header";
+
 export default function Page() {
-  return <h1>Hello, here is public page</h1>;
+  return (
+    <>
+      <h1 className="text-red-800">Hello, here is public page</h1>
+    </>
+  );
 }

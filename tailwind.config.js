@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
       fontFamily: {
@@ -56,7 +56,6 @@ module.exports = {
           "12px",
           { lineHeight: "16px", letterSpacing: "1px", fontWeight: "400" },
         ],
-      
 
         // Responsive typography (tablet, mobile) To be added later
       },

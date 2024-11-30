@@ -1,3 +1,5 @@
+import Header from "../../components/Header/Header";
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +7,7 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <header>This is the header in root layout</header>
+      <Header />
       {children}
       <footer>This is the footer in root layout</footer>
     </>
