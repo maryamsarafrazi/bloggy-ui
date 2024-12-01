@@ -61,5 +61,10 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    // Disable built-in themes to be able to implement custom design
+    //themes: ['dark', light],
+    themes: [],
+  },
 };
