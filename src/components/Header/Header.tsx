@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header>
-      <div className="h-[72px] bg-neutral-100 flex flex-row w-full justify-between items-center px-24 py-3">
+      <div className="w-full h-[72px] flex flex-row justify-between items-center px-24 py-3">
         <div className="flex flex-row items-center">
           <div className="mr-2">
             <div className="avatar">
