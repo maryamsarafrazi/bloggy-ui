@@ -1,3 +1,7 @@
+"use client";
+
+import { InputAdornment, TextField } from "@mui/material";
+
 export default function Header() {
   return (
     <header>
@@ -15,44 +19,34 @@ export default function Header() {
             <p className="text-label-md text-neutral-500">UI/UX Designer</p>
           </div>
         </div>
-        <div className="flex flex-row gap-2">
-          <div className="flex w-72 gap-4 items-center bg-white text-body-md text-neutral-400 px-4 py-1 border border-neutral-500 rounded">
-            <input
-              type="text"
-              placeholder="Search for a keyword ..."
-              className="order-2 bg-white text-body-md text-neutral-400 w-full py-1"
-            />
 
-            {/* Icon from Icon8, as an SVG */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              width="20"
-              height="20"
-              viewBox="0,0,256,256"
-            >
-              <g
-                fill="#737373"
-                fill-rule="nonzero"
-                stroke="none"
-                stroke-width="1"
-                stroke-linecap="butt"
-                stroke-linejoin="miter"
-                stroke-miterlimit="10"
-                stroke-dasharray=""
-                stroke-dashoffset="0"
-                font-family="none"
-                font-weight="none"
-                font-size="none"
-                text-anchor="none"
-              >
-                <g transform="scale(5.33333,5.33333)">
-                  <path d="M20.5,6c-7.98444,0 -14.5,6.51556 -14.5,14.5c0,7.98444 6.51556,14.5 14.5,14.5c3.27316,0 6.28892,-1.10698 8.7207,-2.94922l9.36523,9.36328c0.50163,0.52248 1.24653,0.73295 1.94742,0.55024c0.70088,-0.18271 1.24823,-0.73006 1.43094,-1.43094c0.18271,-0.70088 -0.02776,-1.44578 -0.55024,-1.94742l-9.36328,-9.36523c1.84224,-2.43179 2.94922,-5.44755 2.94922,-8.7207c0,-7.98444 -6.51556,-14.5 -14.5,-14.5zM20.5,10c5.82269,0 10.5,4.67732 10.5,10.5c0,2.79571 -1.08593,5.3206 -2.85156,7.19727c-0.17187,0.12442 -0.32284,0.2754 -0.44727,0.44727c-1.87707,1.76787 -4.40346,2.85547 -7.20117,2.85547c-5.82268,0 -10.5,-4.67732 -10.5,-10.5c0,-5.82268 4.67732,-10.5 10.5,-10.5z"></path>
-                </g>
-              </g>
-            </svg>
-          </div>
+        <div className="flex flex-row gap-2">
+          <TextField
+            placeholder="Search for a keyword ..."
+            variant="outlined"
+            //size="small"
+            className="w-72 h-10 bg-white rounded
+              [&_.MuiOutlinedInput-root]:font-sans
+              [&_.MuiOutlinedInput-root]:text-body-md
+              [&_.MuiOutlinedInput-root]:h-full
+            [&_.MuiOutlinedInput-root]:border-black
+            [&_.MuiOutlinedInput-root_input]:px-1
+            [&_.MuiOutlinedInput-root_input]:border-black"
+            slotProps={{
+              input: {
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <img
+                      className="w-4 h-4 object-cover"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABZElEQVR4nN2UwUoDMRCGc9GLxZuCr6CIvWj1hfYQCGz+P/d9g65d+zZ9AEE82Yp36xNYQQVFGZ2FKmw3qYroQGAhf+bL/JkdY/5t5Hm+A6AkOQFwJ0u/S9lbOnFRFKsATkg+kXxpWLJXiXaZ5CNJAuCe5LH3/oDkmq4egAHJB9WMkiB6c7nhtfd+t0nnvd8DMFVtFZVcfJXS5eaLks9DtBKxa9u0hT6olF2ayCBZ6Zl+DOBSS95PAPQUMI4Rz0Rsre3EAqy1HQXctopFlApwzq1r1bNoi6QtYwHe+0MFTFIeeZDa1og5U7eptJ60YJs+hNAF8AjgOapNP7XddBEkhNAleaP2DE1sZFm2Uo8K/Ykq8VkeXlYI4UhskZvXc0lalORmNERmi1bSOOzwbstQk6dD5sZ1Xw/PdGSPddi9eS5JvwSJCefcBskLre4qz/OtvwnhR7vOvh1gFELynOTpjwB+JV4Bpv9A0lTg3k4AAAAASUVORK5CYII="
+                      alt="search"
+                    />
+                  </InputAdornment>
+                ),
+              },
+            }}
+          />
+
           <button className="h-10 w-auto bg-neutral-950 hover:bg-neutral-700 text-neutral-50 text-label-lg rounded px-4">
             Join newsletter
           </button>
