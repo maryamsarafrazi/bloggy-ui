@@ -19,7 +19,7 @@ export default function Header() {
           </div>
         </div>
         <div className="flex flex-row gap-2">
-          <label className="input input-bordered w-72 border-neutral-00 flex items-center gap-2">
+          <label className="input input-bordered w-72 border-neutral-500 flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
