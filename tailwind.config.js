@@ -63,8 +63,8 @@ module.exports = {
   },
   plugins: [require("daisyui")],
   daisyui: {
+    themes: ["dark", "light"],
     // Disable built-in themes to be able to implement custom design
-    //themes: ['dark', light],
-    themes: [],
+    //themes: [],
   },
 };

@@ -4,11 +4,14 @@ export default function Header() {
       <div className="h-[72px] bg-neutral-100 flex flex-row w-full justify-between items-center px-24 py-3">
         <div className="flex flex-row items-center">
           <div className="mr-2">
-            <img
-              alt="Profile Picture"
-              src="https://i.pravatar.cc/300?img=47"
-              className="w-12 h-12 rounded-full object-cover"
-            />
+            <div className="avatar">
+              <div className="w-12 rounded-full">
+                <img
+                  alt="Profile Picture"
+                  src="https://i.pravatar.cc/300?img=47"
+                />
+              </div>
+            </div>
           </div>
           <div className="flex flex-col gap-1">
             <p className="text-title-md text-neutral-950">Maria Style</p>
@@ -16,7 +19,7 @@ export default function Header() {
           </div>
         </div>
         <div className="flex flex-row gap-2">
-          <label className="input input-bordered rounded w-72 h-10 bg-white border-neutral-300 flex items-center gap-2">
+          <label className="input input-bordered w-72 border-neutral-00 flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
@@ -35,10 +38,7 @@ export default function Header() {
               placeholder="Search for a keyword ..."
             />
           </label>
-          <button
-            className="btn btn-sm w-auto h-10 bg-neutral-950 text-neutral-50  hover:bg-neutral-800 text-label-lg rounded"
-            data-theme="dark"
-          >
+          <button className="btn w-auto text-label-lg" data-theme="dark">
             Join newsletter
           </button>
         </div>
