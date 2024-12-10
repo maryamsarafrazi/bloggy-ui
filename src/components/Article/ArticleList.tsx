@@ -16,16 +16,6 @@ export default function ArticleList() {
       <ArticleListItem />
       <div className="divider" />
       <ArticleListItem />
-      <div className="divider" />
-      <ArticleListItem />
-      <div className="divider" />
-      <ArticleListItem />
-      <div className="divider" />
-      <ArticleListItem />
-      <div className="divider" />
-      <ArticleListItem />
-      <div className="divider" />
-      <ArticleListItem />
     </>
   );
 }
