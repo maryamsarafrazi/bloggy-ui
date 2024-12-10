@@ -1,8 +1,8 @@
 "use client";
 
 import ArticleList from "@/components/Article/ArticleList";
-import ArticleSortTab from "@/components/Article/ArticleSortTab";
 import Hero from "@/components/Hero/Hero";
+import SeriesArticles from "@/components/Sidebar/SeriesArticles";
 import Tags from "@/components/Sidebar/Tags";
 
 export default function Page() {
@@ -15,16 +15,10 @@ export default function Page() {
             <ArticleList />
           </div>
 
-          <Tags />
           <div className="flex-[1]">
-            <div className="h-fit p-4 rounded-lg border border-neutral-500">
-              <h2>Sidebar</h2>
-              <p>Your sidebar content goes here.</p>
-            </div>
-            <div className="h-fit p-4 rounded-lg border border-neutral-500 mt-6">
-              <h2>Series Article</h2>
-              <p>Your sidebar content goes here.</p>
-            </div>
+            <Tags />
+            <div className="mt-6" />
+            <SeriesArticles />
           </div>
         </div>
       </section>
