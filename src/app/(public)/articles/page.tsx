@@ -12,12 +12,7 @@ export default function Page() {
       <section className="max-w-[1440px] mx-auto px-24">
         <div className="flex gap-6">
           <div className="flex-[2]">
-            <div className="p-4 rounded-lg border border-neutral-500">
-              <div className="pb-4">
-                <ArticleSortTab />
-              </div>
-              <ArticleList />
-            </div>
+            <ArticleList />
           </div>
 
           <Tags />
