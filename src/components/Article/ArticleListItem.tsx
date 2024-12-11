@@ -5,12 +5,14 @@ export default function ArticleListItem() {
   return (
     <div className="flex gap-4">
       <div className="flex-none w-[180px] h-30 pt-3">
-        <img
-          alt={articleTitle}
-          title={articleTitle}
-          src="https://picsum.photos/540/400"
-          className="object-cover rounded-lg"
-        />
+        <a href="">
+          <img
+            alt={articleTitle}
+            title={articleTitle}
+            src="https://picsum.photos/540/400"
+            className="object-cover rounded-lg"
+          />
+        </a>
       </div>
 
       <div className="flex-grow">
@@ -19,7 +21,9 @@ export default function ArticleListItem() {
           <time className="text-label-md">11 Nov 2024</time>
         </div>
 
-        <h2 className="text-title-lg">{articleTitle}</h2>
+        <a href="">
+          <h2 className="text-title-lg">{articleTitle}</h2>
+        </a>
         <p className="text-body-sm text-neutral-500">
           Discover the top 10 UI/UX design trends shaping 2024, from AI-driven
           personalization to bold minimalism. This guide will help you create

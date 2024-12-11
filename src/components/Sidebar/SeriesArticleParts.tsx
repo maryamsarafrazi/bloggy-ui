@@ -2,88 +2,42 @@
 
 export default function SeriesArticleParts() {
   return (
-    <div className="h-fit max-h-[500px] p-4 rounded-lg border border-neutral-500">
-      <h2 className="text-title-sm text-neutral-800">Top tags</h2>
+    <div className="h-fit max-h-[600px] p-4 rounded-lg border border-neutral-500">
+      <h2 className="text-title-sm text-neutral-800">
+        <span className="italic">Design strategies</span> (10 parts)
+      </h2>
       <div className="divider" />
-      <div className="flex flex-wrap gap-2 max-h-[350px] overflow-scroll text-neutral-800">
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>design-patterns</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>user-testing</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>ideation</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>navigation</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>team-management</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>strategy</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>design-patterns</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>design-process</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>design</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>navigation</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>team-management</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>strategy</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>design-patterns</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>design-process</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>design</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>navigation</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>team-management</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>strategy</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>design-patterns</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>design-process</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>design</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>navigation</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>team-management</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>strategy</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>design-patterns</p>
-        </div>
-        <div className=" bg-neutral-200 text-label-lg py-2 px-4 rounded-full w-fit">
-          <p>design-process</p>
-        </div>
+      <div className="flex flex-col text-body-md text-neutral-800 gap-1">
+        <a className="py-2 pl-1 hover:bg-neutral-100 rounded-lg" href="">
+          Part 1: Low-Fidelity Wireframes
+        </a>
+        <a className="py-2 pl-1  hover:bg-neutral-100 rounded-lg" href="">
+          Part 2: Interactive Prototypes with Figma
+        </a>
+        <a className="py-2 pl-1  hover:bg-neutral-100 rounded-lg" href="">
+          Part 3: Creating Design Systems
+        </a>
+        <a className="py-2 pl-1  hover:bg-neutral-100 rounded-lg" href="">
+          Part 4: Testing with Clickable Prototypes
+        </a>
+        <a className="py-2 pl-1  hover:bg-neutral-100 rounded-lg" href="">
+          Part 5: Creating Design Systems
+        </a>
+        <a className="py-2 pl-1  hover:bg-neutral-100 rounded-lg" href="">
+          Part 6: Creating Design Systems
+        </a>
+        <a className="py-2 pl-1  hover:bg-neutral-100 rounded-lg" href="">
+          Part 7: Creating Design Systems
+        </a>
+        <a className="py-2 pl-1  hover:bg-neutral-100 rounded-lg" href="">
+          Part 8: Creating Design Systems
+        </a>
+        <a className="py-2 pl-1  hover:bg-neutral-100 rounded-lg" href="">
+          Part 9: Creating Design Systems
+        </a>
+        <a className="py-2 pl-1  hover:bg-neutral-100 rounded-lg" href="">
+          Part 10: Creating Design Systems
+        </a>
       </div>
       <div className="flex justify-end">
         <button

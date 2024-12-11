@@ -20,7 +20,7 @@ export default function Footer() {
             integer bibendum.
           </p>
           <button
-            className="btn bg-neutral-950 text-neutral-50 hover:bg-neutral-800 text-label-lg"
+            className="btn text-neutral-50 text-label-lg"
             data-theme="dark"
           >
             Get in touch
@@ -75,8 +75,7 @@ export default function Footer() {
             https://icons8.com/icon/102748/linkedin-2 dribbble:
             https://icons8.com/icon/7PSaeIu21Lky/external-dribbble-social-media-tanah-basah-basic-outline-tanah-basah
             behance:
-            https://icons8.com/icon/aTJMQ9v3rr0x/external-behance-an-online-platform-for-creative-work-logo-color-tal-revivo
-            instagram:https://icons8.com/icon/Iatym1CIDVkh/instagram-new X:
+           https://icons8.com/icons/set/instagram
             https://icons8.com/icon/cMRBi0rI3iwb/twitterx--v2 */}
           </div>
         </div>

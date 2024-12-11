@@ -38,7 +38,10 @@ export default function Header() {
               placeholder="Search for a keyword ..."
             />
           </label>
-          <button className="btn w-auto text-label-lg" data-theme="dark">
+          <button
+            className="btn text-neutral-50 w-auto text-label-lg"
+            data-theme="dark"
+          >
             Join newsletter
           </button>
         </div>
