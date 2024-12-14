@@ -12,8 +12,8 @@ export default function SeriesArticles() {
           <div className="collapse-title text-body-md font-medium">
             User research & Strategy (4 Parts)
           </div>
-          <div className="collapse-content text-body-sm">
-            <ul className="flex flex-col gap-2 pl-2">
+          <div className="collapse-content text-body-sm bg-white pt-2 pl-4">
+            <ul className="flex flex-col gap-4">
               <li className="link">
                 <a href="">Part 1: Low-fidelity wireframes</a>
               </li>
