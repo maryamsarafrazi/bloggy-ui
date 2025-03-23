@@ -1,0 +1,11 @@
+services:
+  bloggy-ui:
+    container_name: bloggy-ui
+    image: "bloggy-ui"
+    restart: always
+
+    ports:
+      - 44003:3000
+    build:
+      context: .
+      dockerfile: Dockerfile
