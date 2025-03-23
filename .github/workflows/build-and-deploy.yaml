@@ -22,8 +22,8 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /home/${{ secrets.SERVER_USER }}/bloggy/web
-            rm -rf ./*
+            cd /home/${{ secrets.SERVER_USER }}/bloggy
+            rm -rf ./web
             echo "Cleared the deployment directory!"
 
       - name: 📥 Checkout repository
