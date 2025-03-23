@@ -1,0 +1,49 @@
+name: 🧪 SonarCloud Quality Check
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  #push:
+  #  branches: [ "main" ]
+  pull_request:
+    branches: ["main", "develop"]
+    types: [opened, synchronize, reopened]
+
+permissions:
+  pull-requests: read # allows SonarCloud to decorate PRs with analysis results
+  contents: read
+
+jobs:
+  sonarcloud-analysis:
+    name: 🔍 SonarCloud Code Quality
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🧩 SonarCloud Scan
+        uses: sonarsource/sonarqube-scan-action@v5
+        with:
+          projectBaseDir: .
+          args: -Dsonar.projectKey=hadisamadzad_bloggy-ui
+            -Dsonar.organization=hadisamadzad
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+      - name: 🔗 SonarCloud Dashboard Link
+        run: |
+          echo "👉 View report: https://sonarcloud.io/project/overview?id=hadisamadzad_bloggy-ui"
+
+      - name: 🚦 SonarCloud Quality Gate Check
+        id: sonarqube-quality-gate-check
+        uses: sonarsource/sonarqube-quality-gate-action@master
+        with:
+          scanMetadataReportFile: .scannerwork/report-task.txt
+          pollingTimeoutSec: 600
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+      - name: "Example show SonarQube Quality Gate Status value"
+        run: echo "The Quality Gate status is ${{ steps.sonarqube-quality-gate-check.outputs.quality-gate-status }}"
