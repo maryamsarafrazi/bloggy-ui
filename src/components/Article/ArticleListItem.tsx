@@ -1,4 +1,4 @@
-let articleTitle =
+const articleTitle =
   "Crafting Seamless Experiences: 10 UI/UX Design Trends for 2024";
 
 export default function ArticleListItem() {
